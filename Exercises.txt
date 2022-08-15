@@ -1,0 +1,33 @@
+Part One: Solidify Terminology
+In your own terms, define the following terms:
+
+//What is HTTP?
+HTTP stands for Hypertext Transfer Protocol.  It's the rules/protocol for how data requests are handled over the internet (how browsers and servers communicate).
+
+//What is a URL?
+A URL is specific address of the requested page/data. 
+
+//What is DNS?
+The DNS is the Domain Name System that translates the URL into an IP address.
+
+//What is a query string?
+The query string is the additional information used by the server to change the display in the browser, this could be data from a search or a form input.
+
+//What are two HTTP verbs and how are they different?
+GET and POST - Get uses parameters as queries, whereas post uses parameters as content.  Get requests information from a server, but has no side effects.  Post provides information to the servers and has side effects.
+
+//What is an HTTP request?
+An HTTP request is the data sent to the server by the browser that dictates what will be sent back to the browser and how it will be displayed.
+
+//What is an HTTP response?
+An HTTP response is the data sent back to the browser by the server after a request has been made.
+
+//What is an HTTP header? Give a couple examples of request and response headers you have seen.
+An HTTP header is the information that is sent with a request or response.  For example, a request will include the hostname, the date, the preferred language.  The server response may included the content type, the date according to the server, or cookies that the server wants to set.
+
+//What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+1) The browser will attempt to find the IP address by checking computer cache, router, ISP, and finally DNS if needed.  This will either return a valid IP address or it will return 'Not Found'.
+2) The browser will send a Get Request to the server for the specified IP address.
+3) The browser will display content based on the Response from the server.
+
+*Each piece of the displayed webpage may be the result of multiple requests and responses from the browser to the server and back.  The server will provide the browser with items like an HTML file, a CSS file, any script files, etc to be fully parsed and displayed.
